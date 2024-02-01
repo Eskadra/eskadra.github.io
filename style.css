@@ -194,11 +194,20 @@ summary::-webkit-details-marker {
 }
 
 .promo__heading {
+  display: flex;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
   color: #222222;
+}
+.promo__heading>div{
+  padding-left: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #F16D7F;
 }
 
 .promo__content {
@@ -733,4 +742,67 @@ summary::-webkit-details-marker {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button__more{
+  margin-bottom: 50px;
+  background-color: transparent;
+  padding: 5px 10px 5px 10px;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+  width: 212px;
+  height: 48px;
+}
+/* Стили для мобильных устройств */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* Стили для мобильных */
+ .advantages{
+  display: none;
+ }
+ .header__right>a{
+  display: none;
+ }
+ .sale__item_big{
+  min-height: 40px;
+ }
+ .sale{
+  grid-template-columns: repeat(auto-fit, 360px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+ }
+ .promo{
+  justify-content: center;
+    align-items: center;
+    height: 363px;
+ }
+ .promo__img{
+  display: none;
+ }
+ .promo__info{
+  margin-top: auto;
+ }
+}
+
+/* Стили для планшетов */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Стили для планшетов */
+ .advantages{
+  display: none;
+ }
+}
+
+/* Стили для настольных компьютеров */
+@media (min-width: 1025px) {
+  /* Стили для настольных */
+  .advantages{
+    display: flex;
+   }
+   .centered{
+    display: none;
+   }
 }
