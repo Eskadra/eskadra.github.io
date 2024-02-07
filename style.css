@@ -757,6 +757,105 @@ summary::-webkit-details-marker {
   width: 212px;
   height: 48px;
 }
+.frame-background{
+  height: 448px;
+  background-color: #F4F4F4B2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.frame-img{
+  background-image: url("img/Layer\ 41.png");
+}
+.subscribe__info{
+  text-align: center;
+}
+.subscribe__info>div{
+  padding-top: 20px;
+font-family: Lato;
+font-size: 20px;
+font-style: italic;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+}
+.subscribe__first__title{  
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;  
+}
+.subscribe__first__description{
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;  
+}
+.subscribe__second{
+  display: flex;
+  margin-top: 20px;
+}
+.subscribe__second>textarea{
+  resize: none;
+  height: 35px;
+  width: 250px;
+  padding-left: 30px;
+  padding-top: 15px;
+  border: 28px;
+  border-radius: 20px 0px 0px 20px;
+  background-color: #E1E1E1;
+
+  color: #616162;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.subscribe__second>button{
+height: 50px;
+    width: 90px;
+    border: unset;
+    background-color: #D73C3C;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+}
+footer{
+  background-color: #222222;
+  height: 79px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.copyright{
+  color: #FBFBFB;
+  font-family: 'Lato', sans-serif;
+}
+.social{
+  display: flex;
+}
+.social>div{
+  height: 32px;
+  width: 32px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 5px;
+}
+.social>div:hover{
+  background: #E05C6E;
+  color: white;
+  transition: background-color 0.5s ease;
+}
 /* Стили для мобильных устройств */
 @media (min-width: 320px) and (max-width: 767px) {
   /* Стили для мобильных */
@@ -786,6 +885,21 @@ summary::-webkit-details-marker {
  .promo__info{
   margin-top: auto;
  }
+ .frame-background{
+  display: grid;
+ }
+ footer{
+  display: flex;
+  flex-direction: column-reverse;
+  height: auto;
+ }
+ .social{
+  justify-content: center;
+  padding-top: 20px;
+ }
+ .copyright{
+  padding-top: 20px;
+ }
 }
 
 /* Стили для планшетов */
@@ -793,6 +907,9 @@ summary::-webkit-details-marker {
   /* Стили для планшетов */
  .advantages{
   display: none;
+ }
+ .frame-background{
+  display: grid;
  }
 }
 
