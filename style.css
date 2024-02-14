@@ -859,8 +859,17 @@ footer{
 /* Стили для мобильных устройств */
 @media (min-width: 320px) and (max-width: 767px) {
   /* Стили для мобильных */
+  .promo__title{
+    font-size: 38px;
+  }
+  .promo__heading{
+    font-size: 20px;
+  }
+  .promo__heading>div{
+    font-size: 20px;
+  }
  .advantages{
-  display: none;
+  display: grid;
  }
  .header__right>a{
   display: none;
@@ -906,7 +915,7 @@ footer{
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Стили для планшетов */
  .advantages{
-  display: none;
+  display: grid;
  }
  .frame-background{
   display: grid;
